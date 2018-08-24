@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.CarQuestionLevel" table="car_question_level" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="topLevelId" type="java.lang.Integer">
+            <column name="topLevelId" />
+        </property>
+        <property name="topLevelName" type="string">
+            <column name="topLevelName" />
+        </property>
+        <property name="childLevelId" type="java.lang.Integer">
+            <column name="childLevelId" />
+        </property>
+        <property name="childLevelName" type="string">
+            <column name="childLevelName" />
+        </property>
+    </class>
+</hibernate-mapping>

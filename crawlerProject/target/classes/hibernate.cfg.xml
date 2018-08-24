@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--文档说明：标记约束文档 -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!--Hibernate的配置信息 -->
+<hibernate-configuration>
+    <!--配置工厂信息，全局信息 -->
+    <session-factory>
+        <!--1、设置四本一言  -->
+        <!--四本一言 四大基本项： 1、驱动类名 2、指明需要连接的url 3、用户名 4、密码 Hibernate支持不同的数据库，但是每种数据库语法可能有区别，可以使用方言,注意版本 -->
+        <!--数据库驱动类全称  -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--数据库url地址  -->
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.4.249:3306/test?characterEncoding=UTF-8&amp;useUnicode=true&amp;zeroDateTimeBehavior=convertToNull</property>
+        <!--用户名  -->
+        <property name="hibernate.connection.username">root</property>
+        <!--密码  -->
+        <property name="hibernate.connection.password">123456</property>
+        <!--方言 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!--2、全局配置信息  -->
+        <!--执行DDL的类别：
+        create:每次都删除新建
+        update:存在就修改，不存在就新建  -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!--是否显示SQL语句  -->
+        <property name="hibernate.show_sql">false</property>
+        <!--是否格式化SQL语句  -->
+        <property name="hibernate.format_sql">true</property>
+        <!-- 启用getCurrentSession，默认未启用 -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- 【连接池配置】 -->
+        <!-- 配置连接驱动管理类 -->
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<!-- 最大连接数 -->
+		<property name="hibernate.c3p0.max_size">50</property>
+		<!-- 最小连接数 -->
+		<property name="hibernate.c3p0.min_size">10</property>
+		<!-- 获得连接的超时时间,如果超过这个时间,会抛出异常，单位毫秒 -->
+		<property name="hibernate.c3p0.timeout">9000</property>
+		<!-- 最大的PreparedStatement的数量 -->
+		<property name="hibernate.c3p0.max_statements">30</property>
+		<!-- 每隔120秒检查连接池里的空闲连接 ，单位是秒-->
+		<property name="hibernate.c3p0.idle_test_period">9</property>
+		<!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
+		<property name="hibernate.c3p0.acquire_increment">2</property>
+		<!-- 每次都验证连接是否可用 -->
+		<property name="hibernate.c3p0.validate">true</property>
+		<!--最大空闲时间,10秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+		<property name="hibernate.c3p0.maxIdleTime">9</property>
+		
+        
+        
+        <!--基于xml映射文件： 映射文件加载。路径 -->
+        <mapping resource="com/chance/crawlerProject/autohome/bean/TestCar.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/Car.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarConfigDetail.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarConfigItem.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarDetail.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarNews.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarPicture.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarPost.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarPraise.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarPraiseDetail.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarPrice.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarQuestion.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarQuestionLevel.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/CarSeriesPicDetail.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/NewsComment.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/QuestionResponse.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/UserCar.hbm.xml"></mapping>
+        <mapping resource="com/chance/crawlerProject/autohome/bean/UserInfo.hbm.xml"></mapping>
+    </session-factory>
+</hibernate-configuration>

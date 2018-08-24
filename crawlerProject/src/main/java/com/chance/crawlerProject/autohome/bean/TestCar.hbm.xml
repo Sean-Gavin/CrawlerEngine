@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.TestCar" table="test_car" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="sign" type="string">
+            <column name="SIGN" />
+        </property>
+        <property name="brand" type="string">
+            <column name="BRAND" />
+        </property>
+        <property name="brand2" type="string">
+            <column name="BRAND2" />
+        </property>
+        <property name="model" type="string">
+            <column name="MODEL" />
+        </property>
+        <property name="url" type="string">
+            <column name="URL" />
+        </property>
+        <property name="price" type="string">
+            <column name="PRICE" />
+        </property>
+        <property name="autohomeid" type="java.lang.Integer">
+            <column name="AUTOHOMEID" />
+        </property>
+    </class>
+</hibernate-mapping>

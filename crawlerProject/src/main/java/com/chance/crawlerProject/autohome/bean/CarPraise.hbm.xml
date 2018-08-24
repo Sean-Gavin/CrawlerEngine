@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.CarPraise" table="car_praise" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="carId" type="java.lang.Integer">
+            <column name="carId" />
+        </property>
+        <property name="praiseNum" type="java.lang.Integer">
+            <column name="praiseNum" />
+        </property>
+        <property name="pageUrl" type="string">
+            <column name="pageUrl" length="100" />
+        </property>
+        <property name="userScore" type="string">
+            <column name="userScore" />
+        </property>
+        <property name="fuelEconomy" type="string">
+            <column name="fuelEconomy">
+                <comment>&#198;&#189;&#190;&#249;&#211;&#205;&#186;&#196;1.0T:8.4L,2.0T:10.5L</comment>
+            </column>
+        </property>
+        <property name="praiseInfoSum" type="string">
+            <column name="praiseInfoSum" length="1000" />
+        </property>
+        <property name="newCarBreakNum" type="string">
+            <column name="newCarBreakNum" length="100" />
+        </property>
+        <property name="oldCarBreakNum" type="string">
+            <column name="oldCarBreakNum" length="100" />
+        </property>
+        <property name="exteriorBreakNum" type="string">
+            <column name="exteriorBreakNum" length="50" />
+        </property>
+        <property name="interiorBreakNum" type="string">
+            <column name="interiorBreakNum" length="50" />
+        </property>
+        <property name="driveBreakNum" type="string">
+            <column name="driveBreakNum" length="50" />
+        </property>
+        <property name="functionBreakNum" type="string">
+            <column name="functionBreakNum" length="50" />
+        </property>
+        <property name="edbreakNum" type="string">
+            <column name="EDBreakNum" length="50" />
+        </property>
+        <property name="chairBreakNum" type="string">
+            <column name="chairBreakNum" length="50" />
+        </property>
+        <property name="airConBreakNum" type="string">
+            <column name="airConBreakNum" length="50" />
+        </property>
+        <property name="engineBreakNum" type="string">
+            <column name="engineBreakNum" length="50" />
+        </property>
+        <property name="shiftBreakNum" type="string">
+            <column name="shiftBreakNum" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

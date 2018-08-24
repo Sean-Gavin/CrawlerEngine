@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.QuestionResponse" table="question_response" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="questionId" type="java.lang.Integer">
+            <column name="questionId" />
+        </property>
+        <property name="questionUrl" type="string">
+            <column name="questionUrl" length="1000" />
+        </property>
+        <property name="userId" type="string">
+            <column name="userId" length="20" />
+        </property>
+        <property name="replyFloor" type="java.lang.Integer">
+            <column name="replyFloor" />
+        </property>
+        <property name="floor" type="java.lang.Integer">
+            <column name="floor" />
+        </property>
+        <property name="isAccept" type="java.lang.Integer">
+            <column name="isAccept" />
+        </property>
+        <property name="time" type="timestamp">
+            <column name="time" length="19" />
+        </property>
+        <property name="content" type="string">
+            <column name="content" length="10000" />
+        </property>
+    </class>
+</hibernate-mapping>

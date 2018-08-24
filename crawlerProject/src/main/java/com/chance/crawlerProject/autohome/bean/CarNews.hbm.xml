@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.CarNews" table="car_news" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="autoArticleId" type="java.lang.Integer">
+            <column name="autoArticleId" />
+        </property>
+        <property name="carId" type="java.lang.Integer">
+            <column name="carId" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" />
+        </property>
+        <property name="reportTime" type="string">
+            <column name="reportTime" length="100" />
+        </property>
+        <property name="viewNum" type="java.lang.Integer">
+            <column name="viewNum" />
+        </property>
+        <property name="commentNum" type="java.lang.Integer">
+            <column name="commentNum" />
+        </property>
+        <property name="tagInfos" type="string">
+            <column name="tagInfos" length="1000" />
+        </property>
+    </class>
+</hibernate-mapping>

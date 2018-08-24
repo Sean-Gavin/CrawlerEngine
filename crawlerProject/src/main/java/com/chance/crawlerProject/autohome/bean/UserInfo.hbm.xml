@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.UserInfo" table="user_info" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="autoUserId" type="java.lang.Integer">
+            <column name="autoUserId" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="sex" type="string">
+            <column name="sex" length="11">
+                <comment>1&#196;&#208;&#163;&#172;2&#197;&#174;</comment>
+            </column>
+        </property>
+        <property name="birthday" type="date">
+            <column name="birthday" length="10" />
+        </property>
+        <property name="phoneAuth" type="string">
+            <column name="phoneAuth" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" />
+        </property>
+        <property name="followingNum" type="java.lang.Integer">
+            <column name="followingNum">
+                <comment>&#185;&#216;&#215;&#162;</comment>
+            </column>
+        </property>
+        <property name="followerNum" type="java.lang.Integer">
+            <column name="followerNum">
+                <comment>&#183;&#219;&#203;&#191;</comment>
+            </column>
+        </property>
+        <property name="helpScore" type="java.lang.Integer">
+            <column name="helpScore">
+                <comment>&#192;&#239;&#179;&#204;&#214;&#181;</comment>
+            </column>
+        </property>
+        <property name="bestPostNum" type="java.lang.Integer">
+            <column name="bestPostNum">
+                <comment>&#190;&#171;&#187;&#170;&#204;&#251;</comment>
+            </column>
+        </property>
+        <property name="postNum" type="java.lang.Integer">
+            <column name="postNum" />
+        </property>
+        <property name="ownCarList" type="string">
+            <column name="ownCarList" />
+        </property>
+    </class>
+</hibernate-mapping>

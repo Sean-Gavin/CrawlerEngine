@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.CarConfigDetail" table="car_config_detail" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="carId" type="java.lang.Integer">
+            <column name="carId" />
+        </property>
+        <property name="specId" type="java.lang.Integer">
+            <column name="specId" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="1000" />
+        </property>
+        <property name="baseConfig" type="string">
+            <column name="baseConfig" length="1000">
+                <comment>&#187;&#249;&#177;&#190;&#178;&#206;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="carBody" type="string">
+            <column name="carBody" length="1000">
+                <comment>&#179;&#181;&#201;&#237;</comment>
+            </column>
+        </property>
+        <property name="carEngine" type="string">
+            <column name="carEngine" length="1000">
+                <comment>&#183;&#162;&#182;&#175;&#187;&#250;</comment>
+            </column>
+        </property>
+        <property name="carGearBox" type="string">
+            <column name="carGearBox" length="1000">
+                <comment>&#177;&#228;&#203;&#217;&#207;&#228;</comment>
+            </column>
+        </property>
+        <property name="carChassisSteering" type="string">
+            <column name="carChassisSteering" length="1000">
+                <comment>&#181;&#216;&#197;&#204;&#215;&#170;&#207;&#242;</comment>
+            </column>
+        </property>
+        <property name="carBraking" type="string">
+            <column name="carBraking" length="1000">
+                <comment>&#179;&#181;&#194;&#214;&#214;&#198;&#182;&#175;</comment>
+            </column>
+        </property>
+        <property name="carSecurity" type="string">
+            <column name="carSecurity" length="1000">
+                <comment>&#214;&#247;/&#177;&#187;&#182;&#175;&#176;&#178;&#200;&#171;&#215;&#176;&#177;&#184;</comment>
+            </column>
+        </property>
+        <property name="carControl" type="string">
+            <column name="carControl" length="1000">
+                <comment>&#184;&#168;&#214;&#250;&#178;&#217;&#191;&#216;&#197;&#228;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="carUnBurglars" type="string">
+            <column name="carUnBurglars" length="1000">
+                <comment>&#205;&#226;&#178;&#191;&#183;&#192;&#181;&#193;&#197;&#228;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="carInnerConfig" type="string">
+            <column name="carInnerConfig" length="1000">
+                <comment>&#196;&#218;&#178;&#191;&#197;&#228;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="carChairConfig" type="string">
+            <column name="carChairConfig" length="1000">
+                <comment>&#215;&#249;&#210;&#206;&#197;&#228;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="carMultiMediaConfig" type="string">
+            <column name="carMultiMediaConfig" length="1000">
+                <comment>&#182;&#224;&#195;&#189;&#204;&#229;&#197;&#228;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="carLightConfig" type="string">
+            <column name="carLightConfig" length="1000">
+                <comment>&#181;&#198;&#185;&#226;&#197;&#228;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="carWindowConfig" type="string">
+            <column name="carWindowConfig" length="1000">
+                <comment>&#178;&#163;&#193;&#167;/&#186;&#243;&#202;&#211;&#190;&#181;</comment>
+            </column>
+        </property>
+        <property name="carAirAndFridge" type="string">
+            <column name="carAirAndFridge" length="1000">
+                <comment>&#191;&#213;&#181;&#247;/&#177;&#249;&#207;&#228;</comment>
+            </column>
+        </property>
+        <property name="carOptionBag" type="string">
+            <column name="carOptionBag" length="65535">
+                <comment>&#209;&#161;&#215;&#176;&#176;&#252;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.CarPicture" table="car_picture" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="carId" type="java.lang.Integer">
+            <column name="carId" />
+        </property>
+        <property name="seriesId" type="java.lang.Integer">
+            <column name="seriesId" />
+        </property>
+        <property name="picPageUrl" type="string">
+            <column name="picPageUrl" />
+        </property>
+        <property name="pictureUrl" type="string">
+            <column name="pictureUrl" />
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="type">
+                <comment>
+                &#183;&#214;&#192;&#224;&#163;&#186;&#205;&#226;&#185;&#219;-1&#163;&#172;&#215;&#249;&#210;&#206;-3&#163;&#172;&#214;&#208;&#191;&#216;-10&#163;&#172;&#207;&#184;&#189;&#218;-12&#163;&#172;&#178;&#226;&#198;&#192;13&#163;&#172;&#214;&#216;&#210;&#170;&#204;&#216;&#181;&#227;-14</comment>
+            </column>
+        </property>
+        <property name="exteriorColorCode" type="string">
+            <column name="exteriorColorCode" length="100" />
+        </property>
+        <property name="exteriorColor" type="string">
+            <column name="exteriorColor" length="11" />
+        </property>
+        <property name="interiorColorCode" type="string">
+            <column name="interiorColorCode" length="100" />
+        </property>
+        <property name="interiorColor" type="string">
+            <column name="interiorColor" length="11" />
+        </property>
+    </class>
+</hibernate-mapping>

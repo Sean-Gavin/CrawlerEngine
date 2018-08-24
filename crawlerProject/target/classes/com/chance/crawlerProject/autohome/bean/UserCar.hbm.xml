@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.UserCar" table="user_car" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userId" type="java.lang.Integer">
+            <column name="userId" />
+        </property>
+        <property name="carUrl" type="string">
+            <column name="carUrl" />
+        </property>
+        <property name="carName" type="string">
+            <column name="carName" />
+        </property>
+        <property name="guidePrice" type="string">
+            <column name="guidePrice" />
+        </property>
+        <property name="costAllPrice" type="string">
+            <column name="costAllPrice" />
+        </property>
+        <property name="carPrice" type="string">
+            <column name="carPrice">
+                <comment>&#194;&#227;&#179;&#181;&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="purchaseTax" type="string">
+            <column name="purchaseTax">
+                <comment>&#185;&#186;&#214;&#195;&#203;&#176;</comment>
+            </column>
+        </property>
+        <property name="compulsoryInsurance" type="string">
+            <column name="compulsoryInsurance">
+                <comment>&#189;&#187;&#199;&#191;&#207;&#213;</comment>
+            </column>
+        </property>
+        <property name="vavut" type="string">
+            <column name="VAVUT">
+                <comment>&#179;&#181;&#180;&#172;&#202;&#185;&#211;&#195;&#203;&#176;</comment>
+            </column>
+        </property>
+        <property name="commercialInsurance" type="string">
+            <column name="commercialInsurance" />
+        </property>
+        <property name="licenseFee" type="string">
+            <column name="licenseFee">
+                <comment>&#201;&#207;&#197;&#198;&#183;&#209;&#211;&#195;</comment>
+            </column>
+        </property>
+        <property name="payType" type="string">
+            <column name="payType">
+                <comment>&#184;&#182;&#191;&#238;&#183;&#189;&#202;&#189;</comment>
+            </column>
+        </property>
+        <property name="downPaymentPrice" type="string">
+            <column name="downPaymentPrice">
+                <comment>&#202;&#215;&#184;&#182;&#191;&#238;</comment>
+            </column>
+        </property>
+        <property name="repaymentNum" type="string">
+            <column name="repaymentNum">
+                <comment>&#183;&#214;&#198;&#218;&#202;&#253;</comment>
+            </column>
+        </property>
+        <property name="serviceFee" type="string">
+            <column name="serviceFee">
+                <comment>&#202;&#214;&#208;&#248;&#183;&#209;</comment>
+            </column>
+        </property>
+        <property name="promotionGoods" type="string">
+            <column name="promotionGoods">
+                <comment>&#180;&#217;&#207;&#250;&#204;&#215;&#178;&#205;</comment>
+            </column>
+        </property>
+        <property name="buyCarTime" type="date">
+            <column name="buyCarTime" length="10">
+                <comment>&#185;&#186;&#179;&#181;&#202;&#177;&#188;&#228;</comment>
+            </column>
+        </property>
+        <property name="city" type="string">
+            <column name="city">
+                <comment>&#185;&#186;&#179;&#181;&#181;&#216;&#181;&#227;</comment>
+            </column>
+        </property>
+        <property name="manufactorInfo" type="string">
+            <column name="manufactorInfo" length="1000">
+                <comment>&#185;&#186;&#194;&#242;&#201;&#204;&#188;&#210;</comment>
+            </column>
+        </property>
+        <property name="saleTips" type="string">
+            <column name="saleTips" length="1000">
+                <comment>&#191;&#179;&#188;&#219;&#188;&#188;&#199;&#201;</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

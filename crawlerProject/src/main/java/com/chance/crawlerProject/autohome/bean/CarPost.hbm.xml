@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.CarPost" table="car_post" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="carId" type="java.lang.Integer">
+            <column name="carId" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" />
+        </property>
+        <property name="userId" type="java.lang.Integer">
+            <column name="userId">
+                <comment>&#204;&#251;&#215;&#211;&#192;&#224;&#208;&#205;&#163;&#172;1&#185;&#217;&#183;&#189;&#163;&#172;2&#184;&#246;&#200;&#203;</comment>
+            </column>
+        </property>
+        <property name="title" type="string">
+            <column name="title" />
+        </property>
+        <property name="time" type="date">
+            <column name="time" length="10" />
+        </property>
+        <property name="subject" type="string">
+            <column name="subject">
+                <comment>&#183;&#214;&#192;&#224;&#163;&#172;&#185;&#217;&#183;&#189;</comment>
+            </column>
+        </property>
+        <property name="clickNum" type="java.lang.Integer">
+            <column name="clickNum" />
+        </property>
+        <property name="viewNum" type="java.lang.Integer">
+            <column name="viewNum" />
+        </property>
+        <property name="lastReplyTime" type="timestamp">
+            <column name="lastReplyTime" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

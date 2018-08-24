@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-12 17:58:33 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.chance.crawlerProject.autohome.bean.CarPraiseDetail" table="car_praise_detail" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="carId" type="java.lang.Integer">
+            <column name="carId" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" />
+        </property>
+        <property name="autoUserId" type="string">
+            <column name="autoUserId" />
+        </property>
+        <property name="praiseDate" type="date">
+            <column name="praiseDate" length="10" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" />
+        </property>
+        <property name="content" type="string">
+            <column name="content" length="65535" />
+        </property>
+        <property name="client" type="string">
+            <column name="client" />
+        </property>
+        <property name="authSpecId" type="java.lang.Integer">
+            <column name="authSpecId" />
+        </property>
+        <property name="authcarName" type="string">
+            <column name="authcarName" />
+        </property>
+        <property name="buyCarSeriesId" type="java.lang.Integer">
+            <column name="buyCarSeriesId" />
+        </property>
+        <property name="buyCarCity" type="string">
+            <column name="buyCarCity" />
+        </property>
+        <property name="carBearName" type="string">
+            <column name="carBearName" />
+        </property>
+        <property name="buyCarDate" type="date">
+            <column name="buyCarDate" length="10" />
+        </property>
+        <property name="cost" type="string">
+            <column name="cost" />
+        </property>
+        <property name="oilWearSize" type="string">
+            <column name="oilWearSize" />
+        </property>
+        <property name="travelDistance" type="string">
+            <column name="travelDistance" />
+        </property>
+        <property name="space" type="java.lang.Integer">
+            <column name="space" />
+        </property>
+        <property name="engine" type="java.lang.Integer">
+            <column name="engine" />
+        </property>
+        <property name="carHold" type="java.lang.Integer">
+            <column name="carHold" />
+        </property>
+        <property name="oilWear" type="java.lang.Integer">
+            <column name="oilWear" />
+        </property>
+        <property name="comfortable" type="java.lang.Integer">
+            <column name="comfortable" />
+        </property>
+        <property name="exterior" type="java.lang.Integer">
+            <column name="exterior" />
+        </property>
+        <property name="interior" type="java.lang.Integer">
+            <column name="interior" />
+        </property>
+        <property name="costPer" type="java.lang.Integer">
+            <column name="costPer" />
+        </property>
+        <property name="goal" type="string">
+            <column name="goal" />
+        </property>
+    </class>
+</hibernate-mapping>
